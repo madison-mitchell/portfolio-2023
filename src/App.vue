@@ -5,6 +5,7 @@
     </div>
     <div class="right col-span-3">
       <AboutMe />
+      <Skills />
       <!-- <router-view /> -->
     </div>
   </div>
@@ -13,12 +14,14 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import AboutMe from './components/AboutMe.vue';
+import Skills from './components/Skills.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    AboutMe
+    AboutMe,
+    Skills
   },
 };
 </script>
