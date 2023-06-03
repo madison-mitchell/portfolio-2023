@@ -1,7 +1,7 @@
 <template>
   <div class="container h-screen grid grid-cols-4">
-    <div class="left sticky top-0 col-span-1">
-      <NavBar class="" />
+    <div class="left top-0 col-span-1">
+      <NavBar class="sticky top-0" />
     </div>
     <div class="right col-span-3">
       <AboutMe />

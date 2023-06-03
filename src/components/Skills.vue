@@ -4,21 +4,50 @@
         <div class="inline-block w-1.5 h-10 bg-sky-500 mr-4"></div>
         <h1 class="flex flex-col justify-around text-3xl font-bold">What I Do</h1>
     </header>
-    <p class="col-span-4">With a keyboard as my trusty companion and lines of code as my language of choice, 
-        Madison Mitchell is the undisputed queen of digital sorcery. As a Software Developer, 
-        Madison wields the power of Java, C#, .NET, HTML/CSS, JavaScript, Vue.js, SQL Gearset, 
-        and Salesforce with the finesse of a master magician.
-        By day, Madison crafts elegant solutions that make bugs quiver and deadlines surrender. 
-        Their coding prowess is the stuff of legend, and they can tame even the wildest tech 
-        challenges with a flick of their wrist.
-        But when the sun sets, Madison unveils another side to their enchanting persona. They 
-        embark on thrilling adventures astride Honda Groms, racing through the night with their 
-        partner-in-crime by their side. When not tearing up the asphalt, Madison immerses themselves 
-        in the world of literature, seeking refuge in the pages of books that ignite their imagination.
-        Driven by an insatiable passion for coding, Madison thrives on the thrill of creating 
-        cutting-edge projects. From crafting a smart mirror that reflects their genius to weaving 
-        lines of code that dance like poetry, Madison Mitchell is the ultimate code whisperer, 
-        transforming digital dreams into reality, one keystroke at a time.</p>
+    <p class="col-span-4">Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+    <div class="skill-grid grid grid-cols-4 col-span-4 gap-8">
+        <div class="skills-js">
+            <i class="fa-brands fa-square-js text-yellow-400 fa-2xl"></i>
+            <h1 class="font-bold text-lg">Vanilla JavaScript</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-vuejs">
+            <i class="fa-brands fa-vuejs text-emerald-500 fa-2xl"></i>
+            <h1 class="font-bold text-lg">Vue.js</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-html-css">
+            <i class="fa-brands fa-html5 fa-2xl mr-1 text-orange-500"></i><i class="fa-brands fa-css3-alt fa-2xl ml-1 text-sky-500"></i>
+            <h1 class="font-bold text-lg">HTML & CSS</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        
+        <div class="skills-tailwindcss">
+            <img class="h-6" src="../assets/tailwindcss.png" alt="">
+            <h1 class="font-bold text-lg">TailwindCSS</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-salesforce">
+            <i class="fa-brands fa-salesforce fa-2xl text-sky-500"></i>
+            <h1 class="font-bold text-lg">Salesforce</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-java">
+            <i class="fa-brands fa-java fa-2xl"></i>
+            <h1 class="font-bold text-lg">Java</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-dotnet">
+            <img class="h-6" src="../assets/dotnet-rectangle.png" alt="">
+            <h1 class="font-bold text-lg">.NET</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+        <div class="skills-sql">
+            <img class="h-6" src="../assets/sql.png" alt="">
+            <h1 class="font-bold text-lg">SQL</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quod ut officiis illo possimus optio aperiam assumenda dolor minus, veniam cumque sed numquam! Provident delectus praesentium mollitia pariatur voluptatem velit?</p>
+        </div>
+    </div>
   </div>
 </template>
 
