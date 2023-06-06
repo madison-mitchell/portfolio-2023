@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "npm run build && gh-pages -b gh-pages -d dist",
+    "predeploy": "npm run build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
