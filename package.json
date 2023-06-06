@@ -2,9 +2,10 @@
   "name": "porfolio-2023",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://madison-mitchell.github.io/portfolio-2023/",
   "scripts": {
-    "deploy": "npm run build && gh-pages -b gh-pages -d dist",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },

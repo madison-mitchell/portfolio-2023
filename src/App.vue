@@ -1,14 +1,26 @@
 <template>
-  <div class="container h-screen grid grid-cols-4">
+<!--  <div class="container h-screen grid grid-cols-4 md:max-w-full lg:max-w-full xl:max-w-full">
     <div class="left top-0 col-span-1">
       <NavBar class="sticky top-0" />
     </div>
-    <div class="right col-span-3">
-      <AboutMe />
-      <Skills />
-      <!-- <router-view /> -->
+    <div class="right col-span-3 sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
+        <AboutMe />
+        <Skills />
+
+    </div>
+  </div> -->
+
+  <div class="container flex md:max-w-full lg:max-w-full xl:max-w-full">
+    <div class="left top-0 w-96">
+      <NavBar class="sticky top-0" />
+    </div>
+    <div class="right w-full sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
+        <AboutMe />
+        <Skills />
+
     </div>
   </div>
+
 </template>
 
 <script>
@@ -34,10 +46,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-} */
 </style>
