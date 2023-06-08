@@ -1,5 +1,5 @@
 <template>
-  <div class="navBar bg-gradient-to-b from-cyan-500 to-blue-500 h-screen flex flex-col">
+  <div class="navBar bg-gradient-to-b from-cyan-500 to-blue-500 h-screen flex flex-col w-72">
     <h1 class="mt-10 text-2xl text-center font-bold text-white">Madison Mitchell</h1>
     <div class="bio flex flex-col justify-center px-6">
       <img class="headshot rounded-full w-8/12 my-6 mx-auto" src="../assets/headshot.jpeg" alt="" />
