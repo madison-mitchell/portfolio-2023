@@ -1,9 +1,9 @@
 <template>
   <div>
         <footer class="flex justify-evenly text-sm">
-            <h5><a href="http://github.com/madison-mitchell" target="_blank"><i class="fa-brands fa-github fa-lg text-sky-500 w-6"></i>github.com/madison-mitchell</a></h5>
-            <h5><a href="http://www.linkedin.com/in/madison-r-mitchell" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg text-sky-500 w-6"></i>linkedin.com/in/madison-r-mitchell</a></h5>
-            <h5><a href="http://madison-mitchell.github.io" target="_blank"><i class="fa-solid fa-globe fa-lg text-sky-500 w-6"></i>madison-mitchell.github.io</a></h5>
+            <a class="hover:text-sky-600" href="http://github.com/madison-mitchell" target="_blank"><h5><i class="fa-brands fa-github fa-lg text-sky-500 w-6"></i>github.com/madison-mitchell</h5></a>
+            <a class="hover:text-sky-600" href="http://www.linkedin.com/in/madison-r-mitchell" target="_blank"><h5><i class="fa-brands fa-linkedin-in fa-lg text-sky-500 w-6"></i>linkedin.com/in/madison-r-mitchell</h5></a>
+            <a class="hover:text-sky-600" href="http://madison-mitchell.github.io" target="_blank"><h5><i class="fa-solid fa-globe fa-lg text-sky-500 w-6"></i>madison-mitchell.github.io</h5></a>
         </footer>
   </div>
 </template>

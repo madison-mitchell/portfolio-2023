@@ -1,5 +1,5 @@
 <template>
-  <div>
+    <div>
         <div class="main-section flex">
             <div class="left-box w-3/4">
                 <div class="work">
@@ -22,59 +22,138 @@
                     </div>
                     <div class="apple-details">
                         <div class="header-apple flex justify-between mt-4">
-                        <h3 class="text-left tracking-wide text-xl font-black">Team Manager Apprentice</h3>
-                        <h4 class="flex flex-col justify-center text-neutral-400 text-sm">Apple | July 2014 - May 2022</h4>
+                            <h3 class="text-left tracking-wide text-xl font-black">Team Manager Apprentice</h3>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">Apple | July 2014 - May 2022</h4>
+                        </div>
+                        <ul class="bullets-progressive text-justify text-md list-disc pl-6">
+                            <li class="py-0.5">Able to multitask within 5+ applications/systems, while communicating with co-workers and 3+ customers at once</li>
+                            <li class="py-0.5">Able to analyze and resolve a variety of complex technical issues</li>
+                            <li class="py-0.5">Excellent, effective communication skills using written and verbal skills</li>
+                            <li class="py-0.5">Strong time management skills with the ability to work on multiple projects on a deadline</li>
+                            <li class="py-0.5">Able to adopt to different communication styles</li>
+                            <li class="py-0.5">Average 92% Customer Satisfaction Score, 10% above the role average</li>
+                            <li class="py-0.5">Supports 10 Team Leads responsible for 35+ Advisors each with the transition to remote Customer Support from Retail</li>
+                        </ul>
                     </div>
-                    <ul class="bullets-progressive text-justify text-md list-disc pl-6">
-                        <li class="py-0.5">Able to multitask within 5+ applications/systems, while communicating with co-workers and 3+ customers at once</li>
-                        <li class="py-0.5">Able to analyze and resolve a variety of complex technical issues</li>
-                        <li class="py-0.5">Excellent, effective communication skills using written and verbal skills</li>
-                        <li class="py-0.5">Strong time management skills with the ability to work on multiple projects on a deadline</li>
-                        <li class="py-0.5">Able to adopt to different communication styles</li>
-                        <li class="py-0.5">Average 92% Customer Satisfaction Score, 10% above the role average</li>
-                        <li class="py-0.5">Supports 10 Team Leads responsible for 35+ Advisors each with the transition to remote Customer Support from Retail</li>
-                    </ul>
+                </div>
+                <div class="projects my-4">
+                        <header class="flex my-8">
+                        <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
+                        <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">PROJECTS</h1>
+                    </header>
+                    <div class="portfolio-website">
+                        <div class="header-ohioians-care flex justify-between mt-4">
+                            <a class="hover:text-sky-600" href="http://madison-mitchell.github.io">
+                                <h3 class="text-left tracking-wide text-xl font-black">Madison Mitchell Portfolio Website</h3>
+                            </a>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">June 2023</h4>
+                        </div>
+                        <p class="p-ohioians-care text-justify text-md pl-6">
+                            Hope you're enjoying it thus far!    
+                        </p>
+                    </div>
+                    <div class="ohioians-care">
+                        <div class="header-ohioians-care flex justify-between mt-4">
+                            <a class="hover:text-sky-700" href="https://github.com/madison-mitchell/ohioans-care">
+                                <h3 class="text-left tracking-wide text-xl font-black">Ohioans Care</h3>
+                            </a>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">April 2022</h4>
+                        </div>
+                        <p class="p-ohioians-care text-justify text-md pl-6">
+                            Ohioans Care is a comprehensive platform that aims to provide integrated support for all Ohioans, addressing the challenges they face in accessing essential resources and information. It offers a centralized space for users to search and suggest local services, as well as engage with their community through discussions and coordination efforts.
+                        </p>
+                    </div>
+                    <div class="mystery-educator">
+                        <div class="header-mystery-educator flex justify-between mt-4">
+                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/Mystery-Educator">
+                                <h3 class="text-left tracking-wide text-xl font-black">Mystery Educator</h3>
+                            </a>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">March 2022</h4>
+                        </div>
+                        <p class="p-mystery-educator text-justify text-md pl-6">
+                            JAC Enterprises' Mystery Educator is a captivating educational app designed for children aged 6 to 13. It offers an interactive and immersive experience, introducing kids to various areas of interest such as science, art, and history, aligning with the diverse adventures.
+                        </p>
+                    </div>
+                    <div class="mystery-educator">
+                        <div class="header-mystery-educator flex justify-between mt-4">
+                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/Donut-Maker">
+                                <h3 class="text-left tracking-wide text-xl font-black">Donut Clicker</h3>
+                            </a>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">February 2022</h4>
+                        </div>
+                        <p class="p-mystery-educator text-justify text-md pl-6">
+                            In Donut Clicker, you strive to gather as many donuts as possible by clicking on them repeatedly. Use the earned donuts to unlock upgrades, automate production, and expand your donut empire in this addictive and rewarding incremental game.
+                        </p>
+                    </div>
+                    <div class="mystery-educator">
+                        <div class="header-mystery-educator flex justify-between mt-4">
+                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/JAC-Island-Hopping-Adventures">
+                                <h3 class="text-left tracking-wide text-xl font-black">Island Hopping Adventures!</h3>
+                            </a>
+                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">January 2022</h4>
+                        </div>
+                        <p class="p-mystery-educator text-justify text-md pl-6">
+                            JAC Enterprises offers exciting and educational adventures, allowing you to explore Earth's diverse ecosystems and terrains while promoting self-discovery. With their motto "Vincit Qui Se Vincit" - "He/she conquers who conquers him/herself" - they empower you through thrilling experiences like Spelunking!, EYA! bka Experience Your Aquarium!, and Just Trek adventures.
+                        </p>
+                    </div>
                 </div>
             </div>
-            </div>
             <div class="vertical-bar inline-block max-h-max bg-neutral-300 mx-8"></div>
-            <div class="right-box w-1/5 flex mb-8">
-                <div class="skills">
-                    <header class="skills-header flex">
-                        <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
-                        <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">SKILLS</h1>
-                    </header>
-                    <h3 class="text-left tracking-wide text-xl font-black mt-4">Technical</h3>
-                    <ul class="tech-skills text-left text-md tracking-wide">
-                        <li class="py-0.5">C# .NET</li>
-                        <li class="py-0.5">Java</li>
-                        <li class="py-0.5">SQL</li>
-                        <li class="py-0.5">Javascript / Vue.js</li>
-                        <li class="py-0.5">TailwindCSS</li>
-                        <li class="py-0.5">Bootstrap</li>
-                        <li class="py-0.5">Object-Oriented Design</li>
-                        <li class="py-0.5">Cloud (Azure)</li>
-                        <li class="py-0.5">CI/CD tool sets (GIT, Azure, DevOps)</li>
-                        <li class="py-0.5">Salesforce Development</li>
-                    </ul>
-                    <h3 class="text-left tracking-wide text-xl font-black mt-6">Professional</h3>
-                    <ul class="pro-skills text-left text-md tracking-wide">
-                        <li class="py-0.5">Effective Communication</li>
-                        <li class="py-0.5">Team Player</li>
-                        <li class="py-0.5">Strong Problem Solver</li>
-                        <li class="py-0.5">Good Time Management</li>
-                    </ul>
-                    <header class="education-header flex mt-6">
-                        <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
-                        <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">EDUCATION</h1>
-                    </header>
-                    <h3 class="text-left tracking-wide text-xl font-black mt-6">Certificates</h3>
-                    <ul class="education text-left text-md">
-                        <li class="py-0.5">Software Development</li>
-                        <li class="py-0.5 ml-2">April 2022</li>
-                        <li class="py-0.5 ml-2">We Can Code IT</li>
-                        <li class="py-0.5 ml-2">Cleveland, OH</li>
-                    </ul>
+            <div class="w-1/5 flex mb-8">
+                <div class="right-box">
+                    <div class="skills-section">
+                        <header class="skills-header flex">
+                            <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
+                            <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">SKILLS</h1>
+                        </header>
+                        <h3 class="text-left tracking-wide text-xl font-black mt-4">Technical</h3>
+                        <ul class="tech-skills text-left text-md tracking-wide">
+                            <li class="py-0.5">C# .NET</li>
+                            <li class="py-0.5">Java</li>
+                            <li class="py-0.5">SQL</li>
+                            <li class="py-0.5">Javascript / Vue.js</li>
+                            <li class="py-0.5">TailwindCSS</li>
+                            <li class="py-0.5">Bootstrap</li>
+                            <li class="py-0.5">Object-Oriented Design</li>
+                            <li class="py-0.5">Cloud (Azure)</li>
+                            <li class="py-0.5">CI/CD tool sets (GIT, Azure, DevOps)</li>
+                            <li class="py-0.5">Salesforce Development</li>
+                        </ul>
+                        <h3 class="text-left tracking-wide text-xl font-black mt-6">Professional</h3>
+                        <ul class="pro-skills text-left text-md tracking-wide">
+                            <li class="py-0.5">Effective Communication</li>
+                            <li class="py-0.5">Team Player</li>
+                            <li class="py-0.5">Strong Problem Solver</li>
+                            <li class="py-0.5">Good Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="education-section">
+                        <header class="education-header flex mt-12">
+                            <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
+                            <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">EDUCATION</h1>
+                        </header>
+                        <h3 class="text-left tracking-wide text-xl font-black mt-6">Certificates</h3>
+                        <ul class="education text-left text-md">
+                            <li class="py-0.5">Software Development</li>
+                            <li class="py-0.5 ml-2">April 2022</li>
+                            <li class="py-0.5 ml-2">We Can Code IT</li>
+                            <li class="py-0.5 ml-2">Cleveland, OH</li>
+                        </ul>
+                    </div>
+                    <div class="education-section">
+                        <header class="education-header flex mt-12">
+                            <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
+                            <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">INTERESTS</h1>
+                        </header>
+                        <ul class="education text-left text-md">
+                            <li class="py-0.5">Photography</li>
+                            <li class="py-0.5">Creating w/ 3D Printer</li>
+                            <li class="py-0.5">Building PCs</li>
+                            <li class="py-0.5">Reading Fantasy Novels</li>
+                            <li class="py-0.5">Honda Grom Riding</li>
+                            <li class="py-0.5">Exploring New Places</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

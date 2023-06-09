@@ -8,9 +8,9 @@
             <div class="left-box flex">
                 <div class="vertical-bar inline-block max-h-max bg-neutral-300 mr-4"></div>
                 <div class="contact-info flex flex-col justify-center">
-                    <h5 class="text-md text-left"><a href="tel:3304955075">(330) 495-5075</a></h5>
-                    <h5 class="text-md text-left"><a href="mailto:madisonrmitchell@icloud.com">madisonrmitchell@icloud.com</a></h5>
-                    <h5 class="text-md text-left"><a href="http://madison-mitchell.github.io" target="_blank">madison-mitchell.github.io</a></h5>
+                    <a class="hover:text-sky-600" href="tel:3304955075"><h5 class="text-md text-left">(330) 495-5075</h5></a>
+                    <a class="hover:text-sky-600" href="mailto:madisonrmitchell@icloud.com"><h5 class="text-md text-left">madisonrmitchell@icloud.com</h5></a>
+                    <a class="hover:text-sky-600" href="http://madison-mitchell.github.io" target="_blank"><h5 class="text-md text-left">madison-mitchell.github.io</h5></a>
                     <h5 class="text-md text-left">Uniontown, OH, USA</h5>
                 </div>
             </div>
