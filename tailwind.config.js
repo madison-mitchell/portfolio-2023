@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   purge: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     screens: {

@@ -1,15 +1,23 @@
 <template>
-  <div></div>
+  <div id="home-container">
+    <AboutMe />
+    <Skills />
+    <Contact />
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar.vue';
+import AboutMe from '../components/AboutMe.vue';
+import Skills from '../components/Skills.vue';
+import Contact from '../components/Contact.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar,
+    AboutMe,
+    Skills,
+    Contact
   },
 };
 </script>

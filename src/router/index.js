@@ -8,18 +8,30 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/resume',
+    name: 'resume',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "resume" */ '../views/Resume.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash === '#top-of-page') {
+      return {
+        el: '#top-of-page',
+        behavior: 'smooth'
+      };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { left: 0, top: 0 };
+    }
+  }
+});
 
 export default router
