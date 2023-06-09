@@ -41,61 +41,7 @@
                         <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
                         <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">PROJECTS</h1>
                     </header>
-                    <div class="portfolio-website">
-                        <div class="header-ohioians-care flex justify-between mt-4">
-                            <a class="hover:text-sky-600" href="http://madison-mitchell.github.io">
-                                <h3 class="text-left tracking-wide text-xl font-black">Madison Mitchell Portfolio Website</h3>
-                            </a>
-                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">June 2023</h4>
-                        </div>
-                        <p class="p-ohioians-care text-justify text-md pl-6">
-                            Hope you're enjoying it thus far!    
-                        </p>
-                    </div>
-                    <div class="ohioians-care">
-                        <div class="header-ohioians-care flex justify-between mt-4">
-                            <a class="hover:text-sky-700" href="https://github.com/madison-mitchell/ohioans-care">
-                                <h3 class="text-left tracking-wide text-xl font-black">Ohioans Care</h3>
-                            </a>
-                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">April 2022</h4>
-                        </div>
-                        <p class="p-ohioians-care text-justify text-md pl-6">
-                            Ohioans Care is a comprehensive platform that aims to provide integrated support for all Ohioans, addressing the challenges they face in accessing essential resources and information. It offers a centralized space for users to search and suggest local services, as well as engage with their community through discussions and coordination efforts.
-                        </p>
-                    </div>
-                    <div class="mystery-educator">
-                        <div class="header-mystery-educator flex justify-between mt-4">
-                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/Mystery-Educator">
-                                <h3 class="text-left tracking-wide text-xl font-black">Mystery Educator</h3>
-                            </a>
-                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">March 2022</h4>
-                        </div>
-                        <p class="p-mystery-educator text-justify text-md pl-6">
-                            JAC Enterprises' Mystery Educator is a captivating educational app designed for children aged 6 to 13. It offers an interactive and immersive experience, introducing kids to various areas of interest such as science, art, and history, aligning with the diverse adventures.
-                        </p>
-                    </div>
-                    <div class="mystery-educator">
-                        <div class="header-mystery-educator flex justify-between mt-4">
-                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/Donut-Maker">
-                                <h3 class="text-left tracking-wide text-xl font-black">Donut Clicker</h3>
-                            </a>
-                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">February 2022</h4>
-                        </div>
-                        <p class="p-mystery-educator text-justify text-md pl-6">
-                            In Donut Clicker, you strive to gather as many donuts as possible by clicking on them repeatedly. Use the earned donuts to unlock upgrades, automate production, and expand your donut empire in this addictive and rewarding incremental game.
-                        </p>
-                    </div>
-                    <div class="mystery-educator">
-                        <div class="header-mystery-educator flex justify-between mt-4">
-                            <a class="hover:text-sky-600" href="https://github.com/madison-mitchell/JAC-Island-Hopping-Adventures">
-                                <h3 class="text-left tracking-wide text-xl font-black">Island Hopping Adventures!</h3>
-                            </a>
-                            <h4 class="flex flex-col justify-center text-neutral-400 text-sm">January 2022</h4>
-                        </div>
-                        <p class="p-mystery-educator text-justify text-md pl-6">
-                            JAC Enterprises offers exciting and educational adventures, allowing you to explore Earth's diverse ecosystems and terrains while promoting self-discovery. With their motto "Vincit Qui Se Vincit" - "He/she conquers who conquers him/herself" - they empower you through thrilling experiences like Spelunking!, EYA! bka Experience Your Aquarium!, and Just Trek adventures.
-                        </p>
-                    </div>
+                    <ResumeWorkExp />
                 </div>
             </div>
             <div class="vertical-bar inline-block max-h-max bg-neutral-300 mx-8"></div>
@@ -108,23 +54,11 @@
                         </header>
                         <h3 class="text-left tracking-wide text-xl font-black mt-4">Technical</h3>
                         <ul class="tech-skills text-left text-md tracking-wide">
-                            <li class="py-0.5">C# .NET</li>
-                            <li class="py-0.5">Java</li>
-                            <li class="py-0.5">SQL</li>
-                            <li class="py-0.5">Javascript / Vue.js</li>
-                            <li class="py-0.5">TailwindCSS</li>
-                            <li class="py-0.5">Bootstrap</li>
-                            <li class="py-0.5">Object-Oriented Design</li>
-                            <li class="py-0.5">Cloud (Azure)</li>
-                            <li class="py-0.5">CI/CD tool sets (GIT, Azure, DevOps)</li>
-                            <li class="py-0.5">Salesforce Development</li>
+                            <li class="py-0 5" v-for="skill in techSkill" :key="skill">{{ skill }}</li>
                         </ul>
                         <h3 class="text-left tracking-wide text-xl font-black mt-6">Professional</h3>
                         <ul class="pro-skills text-left text-md tracking-wide">
-                            <li class="py-0.5">Effective Communication</li>
-                            <li class="py-0.5">Team Player</li>
-                            <li class="py-0.5">Strong Problem Solver</li>
-                            <li class="py-0.5">Good Time Management</li>
+                            <li class="py-0 5" v-for="skill in profSkill" :key="skill">{{ skill }}</li>
                         </ul>
                     </div>
                     <div class="education-section">
@@ -134,24 +68,19 @@
                         </header>
                         <h3 class="text-left tracking-wide text-xl font-black mt-6">Certificates</h3>
                         <ul class="education text-left text-md">
-                            <li class="py-0.5">Software Development</li>
-                            <li class="py-0.5 ml-2">April 2022</li>
-                            <li class="py-0.5 ml-2">We Can Code IT</li>
-                            <li class="py-0.5 ml-2">Cleveland, OH</li>
+                            <li class="py-0.5">{{ education.cert }}</li>
+                            <li class="py-0.5 ml-2">{{ education.date}}</li>
+                            <li class="py-0.5 ml-2">{{ education.school}}</li>
+                            <li class="py-0.5 ml-2">{{ education.location }}</li>
                         </ul>
                     </div>
-                    <div class="education-section">
+                    <div class="interests-section">
                         <header class="education-header flex mt-12">
                             <div class="inline-block w-1.5 h-7 bg-sky-500 mr-4"></div>
                             <h1 class="flex flex-col text-sky-500 text-2xl font-bold tracking-wider">INTERESTS</h1>
                         </header>
-                        <ul class="education text-left text-md">
-                            <li class="py-0.5">Photography</li>
-                            <li class="py-0.5">Creating w/ 3D Printer</li>
-                            <li class="py-0.5">Building PCs</li>
-                            <li class="py-0.5">Reading Fantasy Novels</li>
-                            <li class="py-0.5">Honda Grom Riding</li>
-                            <li class="py-0.5">Exploring New Places</li>
+                        <ul class="interests text-left text-md mt-6">
+                            <li class="py-0 5" v-for="interest in interests" :key="interest">{{ interest }}</li>
                         </ul>
                     </div>
                 </div>
@@ -162,8 +91,23 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+import ResumeWorkExp from './ResumeWorkExp.vue';
+
 export default {
     name: 'ResumeMain',
+    components: {
+        ResumeWorkExp,
+    },
+    computed: {
+        ...mapState({
+            techSkills: state => state.techSkills,
+            profSkills: state => state.profSkills,
+            education: state => state.education,
+            interests: state => state.interests,
+        }),
+    },
+
 }
 </script>
 
