@@ -75,7 +75,42 @@ export default createStore({
         date: 'January 2022',
         url: 'https://github.com/madison-mitchell/JAC-Island-Hopping-Adventures',
       }
-
+    },
+    workExp: {
+      progressive: {
+        name: 'Progressive',
+        dates: 'May 2022 - Present',
+        jobTitle: 'IT Apps Programmer',
+        location: 'Hybrid | Mayfield Village',
+        bullets: [
+          'Administer and maintain the Salesforce Org, ensuring its optimal performance and stability',
+          'Perform Salesforce development tasks, including customization, configuration, and coding, to support business requirements',
+          'Collaborate with cross-functional teams to gather and analyze project requirements for Salesforce implementation',
+          'Assist in the creation and management of Salesforce projects, ensuring alignment with business goals and best practices',
+          'Stay up-to-date with Salesforce updates, features, and industry trends to recommend improvements and drive innovation within the Salesforce ecosystem',
+        ]
+      },
+      apple: {
+        name: 'Apple',
+        dates: 'July 2014 - May 2022',
+        jobTitle: 'Team Manager Apprentice',
+        location: 'Remote',
+        bullets: [
+          'Able to multitask within 5+ applications/systems, while communicating with co-workers and 3+ customers at once',
+          'Able to analyze and resolve a variety of complex technical issues',
+          'Excellent, effective communication skills using written and verbal skills',
+          'Strong time management skills with the ability to work on multiple projects on a deadline',
+          'Able to adopt to different communication styles',
+          'Average 92% Customer Satisfaction Score, 10% above the role average',
+          'Supports 10 Team Leads responsible for 35+ Advisors each with the transition to remote Customer Support from Retail',
+        ]
+      },
+      bestBuy: {
+        name: 'Best Buy',
+        dates: 'February 2012 - July 2014',
+        jobTitle: 'Sales Lead | Apple Expert',
+        location: 'North Canton, OH',
+      }
     }
   },
   getters: {
