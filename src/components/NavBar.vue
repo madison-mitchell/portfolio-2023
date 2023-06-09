@@ -19,15 +19,12 @@
 
     <nav class="flex flex-col items-center w-full">
       <ul class="text-left text-white font-medium">
-        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><router-link to="/"><i class="fa-solid fa-house text-center w-6"></i><span class="ml-2 mt-1">Home</span></router-link></li>
-        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="#about-me-container"><i class="fa-solid fa-user text-center w-6"></i><span class="ml-2 mt-1">About Me</span></a></li>
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#home"><i class="fa-solid fa-house text-center w-6"></i><span class="ml-2 mt-1">Home</span></a></li>
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#about-me-container"><i class="fa-solid fa-user text-center w-6"></i><span class="ml-2 mt-1">About Me</span></a></li>
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#skills-container"><i class="fa-solid fa-clipboard text-center w-6"></i><span class="ml-2 mt-1">Skills</span></a></li>
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href=""><i class="fa-solid fa-laptop text-center w-6"></i><span class="ml-2 mt-1">Portfolio</span></a></li>
-        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href=""><i class="fa-solid fa-envelope text-center w-6"></i><span class="ml-2 mt-1">Contact</span></a></li>
-        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><router-link to="/resume"><i class="fa-solid fa-file-lines text-center w-6"></i><span class="ml-2 mt-1">Resume</span></router-link></li>
-
-        
-
-        
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#contact-container"><i class="fa-solid fa-envelope text-center w-6"></i><span class="ml-2 mt-1">Contact</span></a></li>
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><router-link to="resume#top-of-page"><i class="fa-solid fa-file-lines text-center w-6"></i><span class="ml-2 mt-1">Resume</span></router-link></li>
       </ul>
 
       <button class="bg-sky-700 hover:bg-sky-800 text-white font-bold mt-10 py-4 px-6 rounded"><i class="fa-solid fa-paper-plane text-white"></i> Hire Me</button>

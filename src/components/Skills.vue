@@ -1,5 +1,5 @@
 <template>
-    <div class="container sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
+    <div id="skills-container" class="container sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
 
         <div class="skills grid grid-cols-4 gap-8 p-16 text-justify m-auto">
             <header class="flex col-span-4">
