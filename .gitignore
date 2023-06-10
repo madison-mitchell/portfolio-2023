@@ -423,3 +423,4 @@ pnpm-debug.log*
 
 
 *.sh
+deploy.sh
