@@ -1,6 +1,6 @@
 <template>
     <div id="contact-container" class="container mb-20 sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
-        <div class="contact m-auto isolate sm:p-10 lg:p-16">
+        <div class="contact m-auto isolate  p-16 sm:p-10 lg:p-16">
             <div class="max-w-2xl">
                 <div class="flex">
                     <div class="inline-block w-1.5 h-10 bg-sky-500 mr-4"></div>
@@ -9,7 +9,7 @@
                 <p class="text-left mt-2 text-lg leading-8 text-gray-600">Level up your software game. Reach out and let's
                     make it happen!</p>
             </div>
-            <form @submit="submitForm" class="bg-white drop-shadow-md rounded-xl mx-auto mt-16 max-w-xl sm:mt-20 p-10">
+            <form @submit="submitForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label for="first-name" class="block text-lg font-semibold leading-6 text-gray-900">First Name</label>
