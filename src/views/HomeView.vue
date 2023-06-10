@@ -2,6 +2,7 @@
   <div id="home-container">
     <AboutMe />
     <Skills />
+    <Portfolio />
     <Contact />
   </div>
 </template>
@@ -10,6 +11,7 @@
 // @ is an alias to /src
 import AboutMe from '../components/AboutMe.vue';
 import Skills from '../components/Skills.vue';
+import Portfolio from '../components/Portfolio.vue';
 import Contact from '../components/Contact.vue';
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     AboutMe,
     Skills,
-    Contact
+    Portfolio,
+    Contact,
   },
 };
 </script>
