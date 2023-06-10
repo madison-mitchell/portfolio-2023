@@ -422,4 +422,5 @@ pnpm-debug.log*
 *.sw?
 
 
-.sh
+*.sh
+deploy.sh
