@@ -422,4 +422,4 @@ pnpm-debug.log*
 *.sw?
 
 
-.sh
+*.sh
