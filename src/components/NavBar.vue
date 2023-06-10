@@ -22,7 +22,7 @@
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#home"><i class="fa-solid fa-house text-center w-6"></i><span class="ml-2 mt-1">Home</span></a></li>
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#about-me-container"><i class="fa-solid fa-user text-center w-6"></i><span class="ml-2 mt-1">About Me</span></a></li>
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#skills-container"><i class="fa-solid fa-clipboard text-center w-6"></i><span class="ml-2 mt-1">Skills</span></a></li>
-        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href=""><i class="fa-solid fa-laptop text-center w-6"></i><span class="ml-2 mt-1">Portfolio</span></a></li>
+        <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#portfolio-container"><i class="fa-solid fa-laptop text-center w-6"></i><span class="ml-2 mt-1">Portfolio</span></a></li>
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><a href="/#contact-container"><i class="fa-solid fa-envelope text-center w-6"></i><span class="ml-2 mt-1">Contact</span></a></li>
         <li class="flex items-center p-2 hover:text-sky-700 active:text-sky-900"><router-link to="resume#top-of-page"><i class="fa-solid fa-file-lines text-center w-6"></i><span class="ml-2 mt-1">Resume</span></router-link></li>
       </ul>
