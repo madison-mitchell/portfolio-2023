@@ -9,7 +9,7 @@
                 <p class="text-left mt-2 text-lg leading-8 text-gray-600">Level up your software game. Reach out and let's
                     make it happen!</p>
             </div>
-            <form @submit="submitForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form @submit.prevent="submitForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label for="first-name" class="block text-lg font-semibold leading-6 text-gray-900">First Name</label>
@@ -63,10 +63,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="mt-10">
-                    <button type="submit" :disabled="isButtonDisabled" :class="{ 'bg-neutral-500': isButtonDisabled, 'bg-gradient-to-r from-cyan-500 hover:from-cyan-600 to-blue-500 hover:bg-indigo-500 hover:to-blue-600': !isButtonDisabled }" class="block w-full rounded-md px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
-                        talk</button>
+                    <button @click="sendEmail" type="submit" :disabled="isButtonDisabled" :class="{'bg-neutral-500': isButtonDisabled, 'bg-gradient-to-r from-cyan-500 hover:from-cyan-600 to-blue-500 hover:bg-indigo-500 hover:to-blue-600': !isButtonDisabled }" class="block w-full rounded-md px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Let's talk
+                    </button>
                 </div>
+
                 <div v-if="showSuccessMessage" class="text-green-600 mt-4">
                     Email sent successfully!
                 </div>
@@ -79,7 +82,7 @@
 <script>
 import { ref } from 'vue';
 import { ChevronDownIcon } from '@heroicons/vue/20/solid';
-const agreed = ref(false);
+import axios from 'axios';
 
 export default {
     name: 'Contact',
@@ -102,64 +105,54 @@ export default {
         };
     },
     methods: {
-        submitForm(event) {
-            event.preventDefault();
-
-            this.isButtonDisabled = true;
-
-            // Format the form data for email
-            const formattedData = {
-                firstName: this.formData.firstName,
-                lastName: this.formData.lastName,
-                email: this.formData.email,
-                company: this.formData.company,
-                country: this.formData.country,
-                phoneNumber: this.formData.phoneNumber,
-                message: this.formData.message
-                // Add other form fields as needed
+        sendEmail() {
+            const data = {
+                personalizations: [
+                    {
+                        to: [
+                            {
+                                email: 'madisonrmitchell@icloud.com',
+                                name: 'Madison Mitchell',
+                            },
+                        ],
+                        subject: 'New Contact Form Submission',
+                    },
+                ],
+                content: [
+                    {
+                        type: 'text/plain',
+                        value: this.formData.message,
+                    },
+                ],
+                from: {
+                    email: 'madisonrmitchell@icloud.com',
+                    name: `${this.formData.firstName} ${this.formData.lastName} ${this.formData.email}`,
+                },
+                reply_to: {
+                    email: this.formData.email,
+                    name: `${this.formData.firstName} ${this.formData.lastName}`,
+                },
             };
 
-            // Send the formatted data via email (replace with your email sending logic)
-            this.sendEmail(formattedData)
-                .then(() => {
+            const headers = {
+                Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
+                'Content-Type': 'application/json',
+            };
+
+            axios
+                .post('https://api.sendgrid.com/v3/mail/send', data, { headers })
+                .then((response) => {
+                    console.log('Email sent');
                     this.showSuccessMessage = true;
-                    // Reset the form after successful submission
-                    this.resetForm();
                 })
                 .catch((error) => {
-                    // Handle any errors that occur during email sending
                     console.error(error);
-                    console.error('Error sending email: ', error);
-                        })
-                .finally(() => {
-                    // Re-enable the button after email sending (whether successful or not)
-                    this.isButtonDisabled = false;
                 });
-        },
-        sendEmail(formData) {
-            // Replace this with your email sending logic (e.g., using an API or server-side code)
-            // Here's an example using the Fetch API:
-            return fetch('http://localhost:3000/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-        },
-        resetForm() {
-            // Reset the form data
-            this.formData.firstName = '';
-            this.formData.lastName = '';
-            this.formData.email = '';
-            this.formData.company = '';
-            this.formData.phoneNumber = '';
-            this.formData.message = '';
-            // Add reset logic for other form fields as needed
         },
     },
 };
 </script>
+
 
 <style scoped>.contact {
     max-width: 1200px;

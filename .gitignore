@@ -424,3 +424,5 @@ pnpm-debug.log*
 
 *.sh
 deploy.sh
+sendgrid.env
+sendgrid.env
