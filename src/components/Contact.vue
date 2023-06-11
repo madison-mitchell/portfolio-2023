@@ -106,49 +106,44 @@ export default {
     },
     methods: {
         sendEmail() {
-            const data = {
-                personalizations: [
-                    {
-                        to: [
-                            {
-                                email: 'madisonrmitchell@icloud.com',
-                                name: 'Madison Mitchell',
-                            },
-                        ],
-                        subject: 'New Contact Form Submission',
-                    },
-                ],
-                content: [
-                    {
-                        type: 'text/plain',
-                        value: this.formData.message,
-                    },
-                ],
-                from: {
+          const data = {
+            personalizations: [
+              {
+                to: [
+                  {
                     email: 'madisonrmitchell@icloud.com',
-                    name: `${this.formData.firstName} ${this.formData.lastName} ${this.formData.email}`,
-                },
-                reply_to: {
-                    email: this.formData.email,
-                    name: `${this.formData.firstName} ${this.formData.lastName}`,
-                },
-            };
+                    name: 'Madison Mitchell',
+                  },
+                ],
+                subject: 'New Contact Form Submission',
+              },
+            ],
+            content: [
+              {
+                type: 'text/plain',
+                value: this.formData.message,
+              },
+            ],
+            from: {
+              email: 'madisonrmitchell@icloud.com',
+              name: `${this.formData.firstName} ${this.formData.lastName} ${this.formData.email}`,
+            },
+            reply_to: {
+              email: this.formData.email,
+              name: `${this.formData.firstName} ${this.formData.lastName}`,
+            },
+          };
 
-            const headers = {
-                Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
-                'Content-Type': 'application/json',
-            };
-
-            axios
-                .post('https://api.sendgrid.com/v3/mail/send', data, { headers })
-                .then((response) => {
-                    console.log('Email sent');
-                    this.showSuccessMessage = true;
-                })
-                .catch((error) => {
-                    console.error(error);
-                });
-        },
+          axios
+            .post('https://misty-bull-top-hat.cyclic.app/api/send-email', data)
+            .then((response) => {
+              console.log('Email sent');
+              this.showSuccessMessage = true;
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        }
     },
 };
 </script>
